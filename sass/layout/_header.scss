@@ -1,6 +1,12 @@
 .header {
     height: $header-height-full;
     display: block;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary, 0.5),
+            rgba($color-dark, 0.7)),
+        url("../img/head.jpg");
+    background-size: cover;
+    background-position: top;
 
     &>.wrapper>.flex-grid>.col {
         height: $header-height-full;

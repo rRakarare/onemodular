@@ -26,7 +26,7 @@ body {
   margin-right: 15rem; }
 
 .heading-1 {
-  margin-bottom: 4rem;
+  margin-bottom: 9rem;
   opacity: 0;
   font-size: 6rem;
   transform: translateY(10rem);
@@ -274,19 +274,17 @@ body {
 
 .card {
   display: inline-flex;
-  border: 1px solid #263238;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 45rem;
-  height: 25rem;
+  width: 55rem;
+  height: 7rem;
   flex-flow: column;
   justify-content: space-between; }
   .card-heading {
     display: flex;
     justify-content: center;
-    margin-top: 2rem; }
+    margin-top: 0rem; }
     .card-heading .card-heading {
-      font-size: 3rem;
-      color: #263238; }
+      font-size: 3.5rem;
+      color: #fff; }
       .card-heading .card-heading p {
         display: inline-block;
         color: #f7d147; }
@@ -297,33 +295,8 @@ body {
       padding: 0 1rem 0 1rem;
       text-align: center;
       font-weight: 800;
-      font-size: 1.1rem;
-      color: #263238; }
-  .card-foot {
-    display: flex;
-    justify-self: end;
-    justify-content: center;
-    margin-bottom: 2rem; }
-
-@media only screen and (max-width: 1260px) {
-  .card {
-    width: 40rem;
-    height: 20rem; }
-    .card-heading {
-      margin-top: 2rem; }
-      .card-heading .card-heading {
-        font-size: 2.2rem; }
-    .card-main .card-main {
-      padding: 0 1rem 0 1rem;
-      font-weight: 800;
-      font-size: .9rem; }
-    .card-foot {
-      margin-bottom: 2rem; } }
-
-@media only screen and (max-width: 767px) {
-  .card {
-    width: 40rem;
-    height: 30rem; } }
+      font-size: 1.3rem;
+      color: #fff; }
 
 .composition {
   position: relative;
@@ -557,31 +530,150 @@ body {
   .overlay {
     display: block; } }
 
+.flip {
+  perspective: 100rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 40rem;
+  width: 24rem; }
+  .flip__side {
+    height: 40rem;
+    transition: all .3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: .3rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(38, 50, 56, 0.15); }
+    .flip__side--front {
+      background-color: #fff; }
+    .flip__side--back {
+      transform: rotateY(180deg); }
+      .flip__side--back-1 {
+        background-image: linear-gradient(to right bottom, #f7d147, #fff); }
+      .flip__side--back-2 {
+        background-image: linear-gradient(to right bottom, #f7d147, #fff); }
+      .flip__side--back-3 {
+        background-image: linear-gradient(to right bottom, #f7d147, #fff); }
+  .flip:hover .flip__side--front {
+    transform: rotateY(-180deg); }
+  .flip:hover .flip__side--back {
+    transform: rotateY(0); }
+  .flip__picture {
+    background-size: cover;
+    height: 23rem;
+    -webkit-background-blend-mode: screen;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
+    .flip__picture-1 {
+      background-image: linear-gradient(to right bottom, #f7d147, #fff), url(../img/unnamed.jpg); }
+    .flip__picture-2 {
+      background-image: linear-gradient(to right bottom, #f7d147, #fff), url(../img/unnamed.jpg); }
+    .flip__picture-3 {
+      background-image: linear-gradient(to right bottom, #f7d147, #fff), url(../img/unnamed.jpg); }
+  .flip__heading {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    text-align: right;
+    width: 75%; }
+  .flip__heading--span {
+    padding: 1rem 2.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .flip__heading--span--1 {
+      background-image: linear-gradient(to right bottom, rgba(247, 209, 71, 0.7), rgba(255, 255, 255, 0.7)); }
+    .flip__heading--span--2 {
+      background-image: linear-gradient(to right bottom, rgba(247, 209, 71, 0.7), rgba(255, 255, 255, 0.7)); }
+    .flip__heading--span--3 {
+      background-image: linear-gradient(to right bottom, rgba(247, 209, 71, 0.7), rgba(255, 255, 255, 0.7)); }
+  .flip__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto; }
+    .flip__details ul li {
+      text-align: center;
+      font-size: 1.1rem;
+      padding: 1rem; }
+      .flip__details ul li:not(:last-child) {
+        border-bottom: 1px solid #eee; }
+  .flip__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .flip__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: white; }
+  .flip__price-only {
+    font-size: 1.2rem;
+    text-transform: uppercase; }
+  .flip__price-value {
+    font-size: 6rem;
+    font-weight: 150; }
+
 .frame {
   position: relative;
   width: 500px;
-  height: 500px;
-  background-color: grey; }
+  height: 300px; }
   .frame-pic {
     width: 180px;
     height: 180px;
-    border: solid #263238 10px;
-    position: absolute; }
+    border: solid #263238 5px;
+    transition: all .3s;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .frame-pic-1 {
-      left: 0;
-      background-color: blue; }
+      left: 0; }
+      .frame-pic-1:hover p:after {
+        content: "lorem asd qwe dfasdd dasd"; }
     .frame-pic-2 {
       top: 50px;
-      left: 150px;
-      background-color: red; }
+      left: 150px; }
+      .frame-pic-2:hover p:after {
+        content: "lorem asd qwe dfasdd dasd"; }
     .frame-pic-3 {
       top: 25px;
-      background-color: green;
-      right: 0; }
+      right: 20px; }
+      .frame-pic-3:hover p:after {
+        content: "lorem asd qwe dfasdd dasd"; }
+    .frame-pic:hover {
+      background-color: #263238;
+      transform: scale(1.1) translateY(-1rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 11; }
+      .frame-pic:hover p {
+        color: white;
+        font-size: 1.1rem; }
+        .frame-pic:hover p span {
+          display: none; }
+  .frame-text {
+    font-weight: 800;
+    font-size: 1.4rem;
+    display: inline-block;
+    text-align: center; }
+    .frame-text span {
+      display: inline-block;
+      text-align: center; }
 
 .header {
   height: 100vh;
-  display: block; }
+  display: block;
+  background-image: linear-gradient(to right bottom, rgba(247, 209, 71, 0.5), rgba(38, 50, 56, 0.7)), url("../img/head.jpg");
+  background-size: cover;
+  background-position: top; }
   .header > .wrapper > .flex-grid > .col {
     height: 100vh; }
 
@@ -591,13 +683,23 @@ body {
 
 .digital {
   padding-top: 2.2rem;
-  height: 500px;
+  padding-bottom: 10rem;
   background-color: #fff; }
+  .digital-text-absatz {
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2rem; }
+  .digital-text-header {
+    margin-top: 13rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    letter-spacing: 3px; }
 
 .bim5d {
   padding-top: 2.2rem;
-  height: 500px;
-  background-color: #fff; }
+  background-color: #fff;
+  padding-bottom: 10rem; }
 
 .wir {
   padding-top: 2.2rem;
