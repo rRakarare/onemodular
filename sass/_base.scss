@@ -1,0 +1,90 @@
+// ######## BASE SETTINGS ########
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 94%; // this is what 1 rem is 
+}
+
+body {
+    box-sizing: border-box;
+}
+
+// ######## FONT SETTINGS ########
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-dark;
+}
+
+
+// ######## LOADER ########
+
+
+
+.content-wrapper {
+    visibility: hidden;
+}
+
+.wrapper {
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+
+
+
+
+
+.heading-1 {
+    margin-bottom: 4rem;
+    opacity: 0;
+    font-size: 6rem;
+    transform: translateY(10rem);
+    transition: transform 1s, opacity 1s;
+    line-height: 7rem;
+
+    &.active-dark {
+        color: $color-dark;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &.active-light {
+        color: $color-white;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media only screen and (max-width: 1260px) {
+    .heading-1 {
+        margin: 0 0 0 5rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .heading-1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heading-1 {
+        font-size: 2rem;
+        line-height: 3.2rem;
+    }
+}

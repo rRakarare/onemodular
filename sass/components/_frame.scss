@@ -1,0 +1,31 @@
+.frame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+
+    &-pic {
+        width: 180px;
+        height: 180px;
+        border: solid $color-dark 10px;
+
+        position: absolute;
+
+        &-1 {
+            left: 0;
+            background-color: blue;
+        }
+
+        &-2 {
+            top: 50px;
+            left: 150px;
+            background-color: red;
+        }
+
+        &-3 {
+            top: 25px;
+            background-color: green;
+            right: 0;
+        }
+    }
+}

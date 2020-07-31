@@ -1,0 +1,52 @@
+.composition {
+    position: relative;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+
+
+
+
+
+    &-square {
+        color: $color-primary;
+        font-weight: 800;
+        font-size: 1.3rem;
+        width: 15rem;
+        height: 15rem;
+        border: .3rem solid $color-primary;
+        position: absolute;
+        z-index: 10;
+        transition: all .2s;
+        outline-offset: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        &-p1 {
+            left: 0;
+            top: -2rem;
+        }
+
+        &-p2 {
+            left: 2rem;
+            top: 2rem;
+        }
+
+        &-p3 {
+            left: 10rem;
+            top: 10rem;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+            transform: scale(1.1) translateY(-1rem);
+            z-index: 11;
+        }
+
+    }
+
+    &:hover &-square:not(:hover) {
+        transform: scale(0.9);
+    }
+}

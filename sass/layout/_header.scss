@@ -1,0 +1,16 @@
+.header {
+    height: $header-height-full;
+    display: block;
+
+    &>.wrapper>.flex-grid>.col {
+        height: $header-height-full;
+    }
+}
+
+@media only screen and (max-width: 980px) {}
+
+@media only screen and (max-height: 600px) {
+    .header {
+        height: 600px;
+    }
+}
