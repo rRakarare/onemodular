@@ -10,6 +10,9 @@ let home_nav_item = document.querySelectorAll('.home-nav-item')
 let wir = document.querySelector('#wir')
 let wir_nav_item = document.querySelectorAll('.wir-nav-item')
 
+let boxes = document.querySelector('#boxes')
+let boxes_nav_item = document.querySelectorAll('.boxes-nav-item')
+
 
 
 // init controller Navbar
@@ -106,6 +109,24 @@ let wir_scene = new ScrollMagic.Scene({
     .addTo(controller);
 
 
+let boxes_scene = new ScrollMagic.Scene({
+        triggerElement: "#boxes",
+        duration: boxes.clientHeight
+    })
+    .on("enter", function () {
+        boxes_nav_item.forEach(item => {
+            item.classList.add('active-light')
+        })
+    })
+    .on("leave", function () {
+        boxes_nav_item.forEach(item => {
+            item.classList.remove('active-light')
+        })
+    })
+    //.addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+
 
 
 // init controller HEADINGS
@@ -148,6 +169,14 @@ new ScrollMagic.Scene({
 
     })
     .setClassToggle(".wir-cap-heading", "active-light")
+    //.addIndicators() // add indicators (requires plugin)
+    .addTo(controller2);
+
+new ScrollMagic.Scene({
+        triggerElement: "#boxes",
+
+    })
+    .setClassToggle(".boxes-cap-heading", "active-dark")
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller2);
 
@@ -195,3 +224,57 @@ let logo_wir_scene = new ScrollMagic.Scene({
     })
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller3);
+
+//// BOXES /////
+
+// init controller LOGO
+var controller4 = new ScrollMagic.Controller({
+    globalSceneOptions: {
+        triggerHook: 0.1,
+    }
+});
+
+
+
+async function scalein(a, b, c, d) {
+    a.classList.add('scale-in');
+    await timeout(100);
+    b.classList.add('scale-in');
+    await timeout(100);
+    c.classList.add('scale-in');
+    await timeout(100);
+    d.classList.add('scale-in');
+    await timeout(100);
+}
+
+async function scaleout(a, b, c, d) {
+    a.classList.remove('scale-in');
+    await timeout(100);
+    b.classList.remove('scale-in');
+    await timeout(100);
+    c.classList.remove('scale-in');
+    await timeout(100);
+    d.classList.remove('scale-in');
+    await timeout(100);
+}
+
+let box1 = document.querySelector('.box-1');
+let box2 = document.querySelector('.box-2');
+let box3 = document.querySelector('.box-3');
+let box4 = document.querySelector('.box-4');
+
+let boxes_scale_scene = new ScrollMagic.Scene({
+        triggerElement: "#boxes",
+        duration: wir.clientHeight
+    })
+
+
+    .on("enter", function () {
+        scalein(box1, box2, box3, box4)
+
+    })
+    .on("leave", function () {
+        scaleout(box4, box3, box2, box1)
+    })
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller4);

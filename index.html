@@ -42,14 +42,14 @@
 
         <nav class="sidenavigation">
 
-            <div id="nav-icon1">
+            <div class="open" id="nav-icon1">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
 
             <a href="#home">
-                <div class="navlogo collapsible">
+                <div class="navlogo">
                     <svg width="90" height="90" version="1.1" viewBox="0 0 32.017 32.017"
                         xmlns="http://www.w3.org/2000/svg">
                         <path class="logoanimate"
@@ -83,33 +83,40 @@
 
 
                 <ul>
-                    <li><a id="navline-home" href="#home">
+                    <li><a id="navline-home" class="show navsign" href="#home">
                             <div class="sideline">
                                 <div class="inner home-nav-item"></div>
                             </div>
                             <p class="number home-nav-item">001</p>
                             <p class="titel home-nav-item">M1</p>
                         </a></li>
-                    <li><a id="navline-digitalisierung" href="#digitalisierung">
+                    <li><a id="navline-digitalisierung" class="show navsign" href="#digitalisierung">
                             <div class="sideline">
                                 <div class="inner digitalisierung-nav-item"></div>
                             </div>
                             <p class="number digitalisierung-nav-item">002</p>
                             <p class="titel digitalisierung-nav-item">Digital</p>
                         </a></li>
-                    <li><a id="navline-bim5d" href="#bim5d">
+                    <li><a id="navline-bim5d" class="show navsign" href="#bim5d">
                             <div class="sideline">
                                 <div class="inner bim5d-nav-item"></div>
                             </div>
                             <p class="number bim5d-nav-item">003</p>
                             <p class="titel bim5d-nav-item">Bim5D</p>
                         </a></li>
-                    <li><a id="navline-wir" href="#wir">
+                    <li><a id="navline-wir" class="show navsign" href="#wir">
                             <div class="sideline">
                                 <div class="inner wir-nav-item"></div>
                             </div>
                             <p class="number wir-nav-item">004</p>
                             <p class="titel wir-nav-item">Über uns</p>
+                        </a></li>
+                    <li><a id="navline-boxes" class="show navsign" href="#boxes">
+                            <div class="sideline">
+                                <div class="inner boxes-nav-item"></div>
+                            </div>
+                            <p class="number boxes-nav-item">005</p>
+                            <p class="titel boxes-nav-item">Plan</p>
                         </a></li>
                 </ul>
 
@@ -304,6 +311,35 @@
             </div>
         </section>
 
+        <section class="boxes navto" id="boxes">
+            <div class="wrapper">
+                <h1 class="heading-1 boxes-cap-heading">Plan</h1>
+            </div>
+            <div class="flex-grid">
+                <div class="col box box-1 d-flex justify-content-center">
+                    <h1>1</h1>
+                    <h2>Modellierung</h2>
+                    <p>asdqwe123</p>
+                </div>
+                <div class="col box box-2 d-flex justify-content-center">
+                    <h1>2</h1>
+                    <h2>Automatisierung</h2>
+                    <p>asdqwe123</p>
+                </div>
+                <div class="col box box-3 d-flex justify-content-center">
+                    <h1>3</h1>
+                    <h2>Simulation</h2>
+                    <p>asdqwe123</p>
+                </div>
+                <div class="col box box-4 d-flex justify-content-center">
+                    <h1>4</h1>
+                    <h2>Ökosystem</h2>
+                    <p>asdqwe123</p>
+                </div>
+            </div>
+
+        </section>
+
 
 
 
@@ -311,7 +347,11 @@
 
 
 
-
+    <script>
+        function timeout(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="js/scrollevents.js"></script>

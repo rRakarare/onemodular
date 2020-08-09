@@ -8,7 +8,7 @@
         width: 180px;
         height: 180px;
         border: solid $color-dark 5px;
-        transition: all .3s;
+        transition: all .2s;
         position: absolute;
         display: flex;
         align-items: center;
@@ -43,7 +43,7 @@
 
         &:hover {
             background-color: $color-dark;
-            transform: scale(1.1) translateY(-1rem);
+            transform: scale(1.08) translateY(-.4rem);
             box-shadow: 0 2.5rem 4rem rgba($color: $color-black, $alpha: .5);
             z-index: 11;
 
