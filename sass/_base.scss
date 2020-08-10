@@ -9,7 +9,6 @@
 }
 
 html {
-    scroll-behavior: smooth;
     font-size: 94%; // this is what 1 rem is 
 }
 
@@ -48,7 +47,7 @@ body {
 .heading-1 {
     margin-bottom: 9rem;
     opacity: 0;
-    font-size: 6rem;
+    font-size: 4rem;
     transform: translateY(10rem);
     transition: transform 1s, opacity 1s;
     line-height: 7rem;

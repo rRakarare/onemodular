@@ -5,7 +5,7 @@
     perspective: 100rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 40rem;
+    height: 30rem;
     width: 24rem;
 
     &__side {
@@ -15,6 +15,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        height: 100%;
         width: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -64,17 +65,17 @@
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
         &-1 {
-            background-image: linear-gradient(to right bottom, $color-primary, $color-white),
+            background-image: linear-gradient(to right bottom, $color-primary, $color-dark),
                 url(../img/unnamed.jpg);
         }
 
         &-2 {
-            background-image: linear-gradient(to right bottom, $color-primary, $color-white),
+            background-image: linear-gradient(to right bottom, $color-primary, $color-dark),
                 url(../img/unnamed.jpg);
         }
 
         &-3 {
-            background-image: linear-gradient(to right bottom, $color-primary, $color-white),
+            background-image: linear-gradient(to right bottom, $color-primary, $color-dark),
                 url(../img/unnamed.jpg);
         }
     }
@@ -83,12 +84,12 @@
         font-size: 1.8rem;
         font-weight: 300;
         text-transform: uppercase;
-        color: $color-white;
+        color: $color-dark;
         position: absolute;
         top: 12rem;
-        right: 2rem;
+        right: 0rem;
         text-align: right;
-        width: 75%;
+        width: 100%;
 
 
 
@@ -118,24 +119,24 @@
         }
     }
 
-    &__details {
-        ul {
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
+    // &__details {
+    //     ul {
+    //         list-style: none;
+    //         width: 80%;
+    //         margin: 0 auto;
 
-            li {
-                text-align: center;
-                font-size: 1.1rem;
-                padding: 1rem;
+    //         li {
+    //             text-align: center;
+    //             font-size: 1.1rem;
+    //             padding: 1rem;
 
-                &:not(:last-child) {
-                    border-bottom: 1px solid #eee;
-                }
-            }
-        }
+    //             &:not(:last-child) {
+    //                 border-bottom: 1px solid #eee;
+    //             }
+    //         }
+    //     }
 
-    }
+    // }
 
     //Back Side Style
 
@@ -151,16 +152,17 @@
     &__price-box {
         text-align: center;
         margin-bottom: 8rem;
-        color: white;
+        color: $color-dark;
     }
 
     &__price-only {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
     }
 
     &__price-value {
-        font-size: 6rem;
+        margin-top: 4rem;
+        font-size: 1.2rem;
         font-weight: 150;
     }
 }

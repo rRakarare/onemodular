@@ -13,6 +13,9 @@ let wir_nav_item = document.querySelectorAll('.wir-nav-item')
 let boxes = document.querySelector('#boxes')
 let boxes_nav_item = document.querySelectorAll('.boxes-nav-item')
 
+let faq = document.querySelector('#faq')
+let faq_nav_item = document.querySelectorAll('.faq-nav-item')
+
 
 
 // init controller Navbar
@@ -115,12 +118,29 @@ let boxes_scene = new ScrollMagic.Scene({
     })
     .on("enter", function () {
         boxes_nav_item.forEach(item => {
-            item.classList.add('active-light')
+            item.classList.add('active-dark')
         })
     })
     .on("leave", function () {
         boxes_nav_item.forEach(item => {
-            item.classList.remove('active-light')
+            item.classList.remove('active-dark')
+        })
+    })
+    //.addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+let faq_scene = new ScrollMagic.Scene({
+        triggerElement: "#faq",
+        duration: faq.clientHeight
+    })
+    .on("enter", function () {
+        faq_nav_item.forEach(item => {
+            item.classList.add('active-dark')
+        })
+    })
+    .on("leave", function () {
+        faq_nav_item.forEach(item => {
+            item.classList.remove('active-dark')
         })
     })
     //.addIndicators() // add indicators (requires plugin)
@@ -180,6 +200,14 @@ new ScrollMagic.Scene({
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller2);
 
+new ScrollMagic.Scene({
+        triggerElement: "#faq",
+
+    })
+    .setClassToggle(".faq-cap-heading", "active-dark")
+    //.addIndicators() // add indicators (requires plugin)
+    .addTo(controller2);
+
 
 // init controller LOGO
 var controller3 = new ScrollMagic.Controller({
@@ -230,7 +258,7 @@ let logo_wir_scene = new ScrollMagic.Scene({
 // init controller LOGO
 var controller4 = new ScrollMagic.Controller({
     globalSceneOptions: {
-        triggerHook: 0.1,
+        triggerHook: 0.2,
     }
 });
 
@@ -265,7 +293,7 @@ let box4 = document.querySelector('.box-4');
 
 let boxes_scale_scene = new ScrollMagic.Scene({
         triggerElement: "#boxes",
-        duration: wir.clientHeight
+        duration: boxes.clientHeight
     })
 
 
