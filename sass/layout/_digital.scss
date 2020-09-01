@@ -1,20 +1,16 @@
 .digital {
-    padding-top: 2.2rem;
-    padding-bottom: 10rem;
     height: 100vh;
-    background-color: $color-white;
+    border-bottom: 3px $color-dark;
 
     &-text-absatz {
-        margin-bottom: 1rem;
         display: inline-block;
         text-align: left;
         font-size: 1.2rem;
     }
 
     &-text-header {
-        margin-top: 13rem;
+        margin-top: 10rem;
         font-size: 1.4rem;
-        margin-bottom: 1rem;
         letter-spacing: 3px;
     }
 }

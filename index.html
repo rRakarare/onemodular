@@ -10,11 +10,18 @@
         type="text/css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/logom1.svg">
-
+    <link rel="stylesheet" href="css/purecookie.css" />
+    <script src="js/purecookie.js"></script>
     <title>Modular One - Digitalisierung der Baubranche</title>
 </head>
 
+
 <body>
+
+    <div id="asdqwe">
+
+    </div>
+
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
     </div>
@@ -33,8 +40,10 @@
                 <ul>
                     <li><a href="#home">Modular One</a></li>
                     <li><a href="#digitalisierung">Digital</a></li>
-                    <li><a href="#bim5d">BIM5D</a></li>
-                    <li><a href="#wir">Über Uns</a></li>
+                    <li><a href="#bim5d">Vorgehen</a></li>
+                    <li><a href="#boxes">Plan</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#wir">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -95,22 +104,16 @@
                             <div class="inner digitalisierung-nav-item"></div>
                         </div>
                         <p class="number digitalisierung-nav-item">002</p>
-                        <p class="titel digitalisierung-nav-item">Digital</p>
+                        <p class="titel digitalisierung-nav-item">Revolution</p>
                     </a></li>
                 <li><a id="navline-bim5d" class="show navsign" href="#bim5d">
                         <div class="sideline">
                             <div class="inner bim5d-nav-item"></div>
                         </div>
-                        <p class="number bim5d-nav-item">003</p>
-                        <p class="titel bim5d-nav-item">Bim5D</p>
+                        <p class="number bim5d-nav-item">004</p>
+                        <p class="titel bim5d-nav-item">Vorgehen</p>
                     </a></li>
-                <li><a id="navline-wir" class="show navsign" href="#wir">
-                        <div class="sideline">
-                            <div class="inner wir-nav-item"></div>
-                        </div>
-                        <p class="number wir-nav-item">004</p>
-                        <p class="titel wir-nav-item">Über uns</p>
-                    </a></li>
+
                 <li><a id="navline-boxes" class="show navsign" href="#boxes">
                         <div class="sideline">
                             <div class="inner boxes-nav-item"></div>
@@ -124,6 +127,13 @@
                         </div>
                         <p class="number faq-nav-item">006</p>
                         <p class="titel faq-nav-item">FAQ</p>
+                    </a></li>
+                <li><a id="navline-wir" class="show navsign" href="#wir">
+                        <div class="sideline">
+                            <div class="inner wir-nav-item"></div>
+                        </div>
+                        <p class="number wir-nav-item">007</p>
+                        <p class="titel wir-nav-item">Kontakt</p>
                     </a></li>
             </ul>
 
@@ -167,22 +177,22 @@
         <section class="digital navto" id="digitalisierung">
             <div class="wrapper">
                 <h1 class="heading-1 digitalisierung-cap-heading">Revolution der Baubranche</h1>
-                <div class="flex-grid">
+                <div class="flex-grid align-items-center">
                     <div class="col d-flex justify-content-center">
                         <div class="frame">
                             <div class="frame-pic frame-pic-1">
                                 <p class="frame-text frame-text-1"><span>BIM</span></p>
                             </div>
                             <div class="frame-pic frame-pic-2">
-                                <p class="frame-text frame-text-1"><span>LEAN</span></p>
+                                <p class="frame-text frame-text-1"><span>7D</span></p>
                             </div>
                             <div class="frame-pic frame-pic-3">
-                                <p class="frame-text frame-text-1"><span>METHODIK</span></p>
+                                <p class="frame-text frame-text-1"><span>VR / AR</span></p>
                             </div>
                         </div>
 
                     </div>
-                    <div class="col d-flex justify-content-center align-items-center">
+                    <div class="col d-flex justify-content-center">
                         <div class="digital-text">
                             <h4 class="digital-text-header">DIGITALE TRANSFORMATION</h4>
                             <p class="digital-text-absatz">
@@ -211,107 +221,50 @@
                 <h1 class="heading-1 bim5d-cap-heading">Vorteile</h1>
                 <div class="flex-grid">
                     <div class="col d-flex justify-content-center">
-                        <div class="flip">
-                            <div class="flip__side flip__side--front">
-                                <div class="flip__picture flip__picture-1">
-                                    &nbsp;
-                                </div>
-                                <h4 class="flip__heading">
-                                    <span class="flip__heading--span flip__heading--span--1">Planungsphase</span>
+                        <div class="slidecard">
+                            <div class="slidecard-nav">
+                                <div class="slidecard-nav-cube slidecard-nav-cube-1 active"></div>
+                                <div class="slidecard-nav-cube slidecard-nav-cube-2"></div>
+                                <div class="slidecard-nav-cube slidecard-nav-cube-3"></div>
+                            </div>
+                            <div class="slidecard-content slidecard-content-1 active">
+                                <div class="slidecard-content-image slidecard-content-image-1"></div>
 
-                                </h4>
-                                <!-- <div class="flip__details">
-                                    <ul>
-                                        <li>3 day bootcamp</li>
-                                        <li>how to clear camps</li>
-                                        <li>gank like jankos</li>
-                                        <li>become lee sin god</li>
-                                        <li>jungle pathing</li>
-                                    </ul>
-                                </div> -->
+
+                                <div class="slidecard-content-heading slidecard-content-heading-1">01/ Planen</div>
+
+                                <div class="slidecard-content-text slidecard-content-text-1">In der Planungsphase werden
+                                    die Grundlagen für den weiteren standardisierbaren Prozess geschaffen. Durch
+                                    Kollisionsprüfungen, VR-Nutzung und Bauablaufsimulationen werden Fehler frühzeitig
+                                    ausgeschlossen.</div>
+
 
                             </div>
-                            <div class="flip__side flip__side--back flip__side--back-1">
-                                <div class="flip__cta">
-                                    <div class="flip__price-box">
-                                        <p class="flip__price-only">Planungsphase</p>
-                                        <p class="flip__price-value">Lorem ipsum dolor, sit amet consectetur adipisicing
-                                            elit. Maxime officiis dicta perspiciatis error expedita, possimus voluptatem
-                                            quia sequi impedit reiciendis id atque rem necessitatibus eum iusto
-                                            doloribus sapiente voluptatibus provident?</p>
-                                    </div>
+                            <div class="slidecard-content slidecard-content-2">
+                                <div class="slidecard-content-image slidecard-content-image-2"></div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                        <div class="flip">
-                            <div class="flip__side flip__side--front">
-                                <div class="flip__picture flip__picture-1">
-                                    &nbsp;
-                                </div>
-                                <h4 class="flip__heading">
-                                    <span class="flip__heading--span flip__heading--span--1">Bauphase</span>
 
-                                </h4>
-                                <!-- <div class="flip__details">
-                                    <ul>
-                                        <li>3 day bootcamp</li>
-                                        <li>how to clear camps</li>
-                                        <li>gank like jankos</li>
-                                        <li>become lee sin god</li>
-                                        <li>jungle pathing</li>
-                                    </ul>
-                                </div> -->
+                                <div class="slidecard-content-heading slidecard-content-heading-1">02/ Bauen</div>
+
+                                <div class="slidecard-content-text slidecard-content-text-1">Die zuvor durchgeführten
+                                    Simulationen sorgen für Bauprojekte mit höherer Qualität und geringeren Kosten.
+                                    Darüber hinaus lässt sich der Baufortschritt Ihres Vorhabens bestmöglich überwachen.
+                                </div>
+
 
                             </div>
-                            <div class="flip__side flip__side--back flip__side--back-1">
-                                <div class="flip__cta">
-                                    <div class="flip__price-box">
-                                        <p class="flip__price-only">Bauphase</p>
-                                        <p class="flip__price-value">Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Natus veniam ea dolores suscipit fugiat? Iusto cupiditate totam
-                                            doloribus quod est, doloremque aliquid impedit nemo minima commodi,
-                                            voluptates ad quaerat? Velit.</p>
-                                    </div>
+                            <div class="slidecard-content slidecard-content-3">
+                                <div class="slidecard-content-image slidecard-content-image-3"></div>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                        <div class="flip">
-                            <div class="flip__side flip__side--front">
-                                <div class="flip__picture flip__picture-1">
-                                    &nbsp;
-                                </div>
-                                <h4 class="flip__heading">
-                                    <span class="flip__heading--span flip__heading--span--1">Betriebsphase </span>
 
-                                </h4>
-                                <!-- <div class="flip__details">
-                                    <ul>
-                                        <li>3 day bootcamp</li>
-                                        <li>how to clear camps</li>
-                                        <li>gank like jankos</li>
-                                        <li>become lee sin god</li>
-                                        <li>jungle pathing</li>
-                                    </ul>
-                                </div> -->
+                                <div class="slidecard-content-heading slidecard-content-heading-1">03/ Betreiben</div>
 
-                            </div>
-                            <div class="flip__side flip__side--back flip__side--back-1">
-                                <div class="flip__cta">
-                                    <div class="flip__price-box">
-                                        <p class="flip__price-only">Betriebsphase</p>
-                                        <p class="flip__price-value">Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Nesciunt sed repellendus voluptas quo blanditiis similique enim
-                                            nostrum culpa ab, magni quibusdam nobis libero commodi obcaecati optio
-                                            excepturi maiores amet molestiae.</p>
-                                    </div>
+                                <div class="slidecard-content-text slidecard-content-text-1">Die standardisierten
+                                    digitalen 3D-Modelle bilden die Grundlagen für eine automatisierte Verwaltung der
+                                    Gebäude. Dabei kann beispielsweise ein digitales Scheckheft Ihres Gebäudes aufgebaut
+                                    werden, um den Werterhalt langfristig zu gewährleisten und zu verifizieren.</div>
 
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -319,40 +272,41 @@
             </div>
         </section>
 
-        <section class="wir navto" id="wir">
-            <div class="wrapper">
-                <h1 class="heading-1 wir-cap-heading">FAQ</h1>
-                <div class="flex-grid">
-                    <div class="col"></div>
-                    <div class="col">Col-2</div>
-                </div>
-            </div>
-        </section>
+
 
         <section class="boxes navto" id="boxes">
             <div class="wrapper">
                 <h1 class="heading-1 boxes-cap-heading">Plan</h1>
             </div>
-            <div class="flex-grid">
-                <div class="col box box-1 d-flex justify-content-center">
-                    <h1>1</h1>
-                    <h2>Modellierung</h2>
-                    <p>asdqwe123</p>
-                </div>
-                <div class="col box box-2 d-flex justify-content-center">
-                    <h1>2</h1>
-                    <h2>Automatisierung</h2>
-                    <p>asdqwe123</p>
-                </div>
-                <div class="col box box-3 d-flex justify-content-center">
-                    <h1>3</h1>
-                    <h2>Simulation</h2>
-                    <p>asdqwe123</p>
-                </div>
-                <div class="col box box-4 d-flex justify-content-center">
-                    <h1>4</h1>
-                    <h2>Ökosystem</h2>
-                    <p>asdqwe123</p>
+            <div class="boxwrap">
+                <div class="flex-grid">
+                    <div class="col box box-1 d-flex">
+                        <h1>1</h1>
+                        <h2>Modellierung</h2>
+                        <p>M1 baut Gebäudemodelle auf und strukturiert diese intelligent – dadurch sind die aufgebauten
+                            Modelle für die Bauherrschaft sinnvoll nutzbar.</p>
+                    </div>
+                    <div class="col box box-2 d-flex">
+                        <h1>2</h1>
+                        <h2>Attribuierung</h2>
+                        <p>Die von M1 entwickelten Modellierungs- und Attribuierungsrichtlinien gewährleisten einen
+                            einheitlichen und klar definierten Prozess. Durch stetige Optimierung und ein hohes Maß an
+                            Flexibilität können projektbezogene Anpassungen jederzeit erfolgen.</p>
+                    </div>
+                    <div class="col box box-3 d-flex">
+                        <h1>3</h1>
+                        <h2>Automatisierung/ <br> Simulation</h2>
+                        <p>M1 entwickelt Automatisierungen und Simulationen als Aufsatz für digitale Gebäudemodelle wie
+                            bspw.: die Automatisierte Kosten- und Mengenkalkulation nach DIN276 und DIN277 oder die
+                            Teil-Automatisierte Berechnung der Lebenszykluskosten nach DIN 18960 </p>
+                    </div>
+                    <div class="col box box-4 d-flex">
+                        <h1>4</h1>
+                        <h2>Ökosystem</h2>
+                        <p>M1 formt gemeinsam mit starken Partnern aus dem Bausegment ein Ökosystem, das es durch
+                            Kooperation und Partizipation auch für KMU’s ermöglicht den Weg der digitalen Transformation
+                            zu beschreiten.</p>
+                    </div>
                 </div>
             </div>
 
@@ -364,25 +318,142 @@
 
                 <div class="flex-grid">
                     <div class="col">
-                        <a class="faqslide">
+                        <a class="faqslide faqslide-1">
                             <h3>01</h3>
-                            <p> <span>Frage 1 ?</span> </p>
+                            <p> Frage 1 ?</p>
                         </a>
-                        <a class="faqslide">
+                        <div class="faqslide-content faqslide-content-1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi harum sed voluptate
+                                eum saepe libero rerum numquam! Ducimus earum fuga a perferendis tenetur optio
+                                voluptates, provident nam eveniet accusantium.</p>
+
+                        </div>
+                        <a class="faqslide faqslide-2">
                             <h3>02</h3>
-                            <p> <span>Frage 2 ?</span> </p>
+                            <p> Frage 2 ?</p>
                         </a>
-                        <a class="faqslide">
+                        <div class="faqslide-content faqslide-content-2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi harum sed voluptate
+                                eum saepe libero rerum numquam! Ducimus earum fuga a perferendis tenetur optio
+                                voluptates, provident nam eveniet accusantium.</p>
+
+                        </div>
+                        <a class="faqslide faqslide-3">
                             <h3>03</h3>
-                            <p> <span>Frage 3 ?</span> </p>
+                            <p> Frage 3 ?</p>
                         </a>
-                        <a class="faqslide">
+                        <div class="faqslide-content faqslide-content-3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi harum sed voluptate
+                                eum saepe libero rerum numquam! Ducimus earum fuga a perferendis tenetur optio
+                                voluptates, provident nam eveniet accusantium.</p>
+
+                        </div>
+                        <a class="faqslide faqslide-4">
                             <h3>04</h3>
-                            <p> <span>Frage 4 ?</span> </p>
+                            <p> Frage 4 ?</p>
                         </a>
+                        <div class="faqslide-content faqslide-content-4">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi harum sed voluptate
+                                eum saepe libero rerum numquam! Ducimus earum fuga a perferendis tenetur optio
+                                voluptates, provident nam eveniet accusantium.</p>
+
+                        </div>
                     </div>
 
                 </div>
+            </div>
+
+        </section>
+
+        <section class="wir navto" id="wir">
+            <div class="wrapper">
+                <h1 class="heading-1 wir-cap-heading">Kontakt</h1>
+                <div class="flex-grid">
+                    <div class="col justify-content-center">
+                        <div class="contact">
+                            <h2>Aus der Branche</h2>
+                            <ul>
+                                <li>Sie besitzen hohe fachliche Expertise</li>
+                                <li>Sie haben noch keine (oder unzureichende) digitale Strategie, um Ihre
+                                    Arbeitsprozesse stetig
+                                    zu optimieren.</li>
+                            </ul>
+                            <p>Dann werden Sie Teil des innovativen Modular One Ökosystems - profitieren Sie von unserem
+                                Netzwerk, Erfahrungen anderer Beteiligter und der jahrelangen Expertise im digitalen
+                                Bausegment.</p>
+                            <div class="contact-foot">
+                                <a href="#" class="contact-foot-frame contact-foot-frame-1">
+                                    <img class="contact-foot-icon contact-foot-icon-1" src="img/icons/phone-solid.svg"
+                                        alt="">
+                                </a>
+                                <a href="#" class="contact-foot-frame contact-foot-frame-2">
+                                    <img class="contact-foot-icon contact-foot-icon-2"
+                                        src="img/icons/envelope-solid.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col justify-content-center">
+                        <div class="contact">
+                            <h2>Sie sind Bauherr</h2>
+                            <ul>
+                                <li>planen ein Bauprojekt</li>
+                                <li>wollen Kosten und Bauzeiten reduzieren sowie Ihre Projektqualität erhöhen</li>
+                                <li>dauerhaft, ortsunabhängig und präzise über Ihr Projekt informiert sein</li>
+                                <li>datenbasierten Wissenstransfer der Projekte</li>
+                                <li>digitales Controlling ihrer Projekte</li>
+                                <li>nachhaltige Aspekte integrieren</li>
+                            </ul>
+                            <p>Zögern Sie nicht uns unverbindlich zu kontaktieren – wir freuen uns auf das Gespräch!</p>
+                            <div class="contact-foot">
+                                <a href="#" class="contact-foot-frame contact-foot-frame-1">
+                                    <img class="contact-foot-icon contact-foot-icon-1" src="img/icons/phone-solid.svg"
+                                        alt="">
+                                </a>
+                                <a href="#" class="contact-foot-frame contact-foot-frame-2">
+                                    <img class="contact-foot-icon contact-foot-icon-2"
+                                        src="img/icons/envelope-solid.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+
+            <div class="footer-box">
+                <h5>Copyright &copy; <script>
+                        document.write(new Date().getFullYear())
+                    </script>
+                </h5>
+
+                <p>ModularOne GmbH <i><svg width="19" height="19" version="1.1" viewBox="0 0 32.017 32.017"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="logoanimate"
+                                d="m16.007 12.631 6.6649-6.6675h3.3787v2.7331h-2.2463l-7.7973 7.7973-7.3131-7.3131v16.87h-2.7305v-20.087h3.3787z"
+                                fill="#263238" />
+                            <path class="" d="m23.397 11.025-2.3178 2.3178v1.6245h2.241v11.083h2.7305v-15.026z"
+                                fill="#263238" />
+                            <style type="text/css">
+                                .st0 {
+                                    fill: #263238;
+                                }
+
+                                .st1 {
+                                    fill: #263238;
+                                }
+                            </style>
+                            <rect class="animatestroke" x="1.0141" y="1.0141" width="29.989" height="29.989" fill="none"
+                                stroke="black" stroke-linecap="round" stroke-width=".6" />
+                        </svg></i> </p>
+
+
+
+
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutzerklärung</a>
             </div>
 
         </section>
@@ -392,11 +463,11 @@
 
     </div>
 
-
     <script>
         window.addEventListener('load', () => {
             document.querySelector('.loader-wrapper').style.display = "none";
             document.querySelector('.content-wrapper').style.visibility = "visible";
+
         })
     </script>
     <script>
@@ -409,10 +480,13 @@
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="js/scrollevents.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/slidecard.js"></script>
+    <script src="js/faq.js"></script>
     <script src="js/mobilenav.js"></script>
 
 

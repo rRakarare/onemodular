@@ -1,0 +1,95 @@
+.contact {
+    padding: 10px 10px 10px 10px;
+    width: 500px;
+    height: 600px;
+    border: 2px solid $color-dark;
+    position: relative;
+
+    &>h2 {
+        width: 480px;
+        position: absolute;
+        top: 1rem;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+
+    &>ul {
+        width: 450px;
+        margin-left: 30px;
+        position: absolute;
+        top: 20%;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    &>p {
+        width: 480px;
+        position: absolute;
+        bottom: 30%;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+    &-foot {
+        width: 480px;
+        position: absolute;
+        bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-frame {
+            display: flex;
+            width: 70px;
+            height: 70px;
+            border: 2px solid $color-dark;
+            justify-content: center;
+            transition: all .4s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 200%;
+                height: 200%;
+                transform-origin: 0 0;
+                transform: translateX(-100%) skewX(-45deg);
+                background-color: darken($color-primary, 0%);
+                transition: all .3s;
+
+                z-index: -1;
+            }
+
+            &:hover {
+
+                color: $color-dark;
+
+                &:before {
+                    transform: translateX(0) skewX(-45deg);
+                }
+
+            }
+
+            &-1 {
+                margin-right: 2rem;
+
+
+            }
+
+            &-2 {
+                margin-left: 2rem;
+            }
+        }
+
+        &-icon {
+            width: 50%;
+        }
+    }
+}

@@ -79,13 +79,13 @@
             & .inner {
                 display: block;
                 left: 0;
-                background-color: $color-nav;
+                background-color: $color-dark;
                 width: 60%;
-                height: 1px;
+                height: 2px;
                 transition: all .6s ease;
 
                 &.active-dark {
-                    height: 1px;
+                    height: 2px;
                     width: 100%;
                     background-color: black;
                 }
@@ -110,7 +110,7 @@
 .navline {
     background-color: $color-nav;
     width: 2px;
-    height: 100vh;
+    height: 2000px;
     transition: all .6s ease;
 
 

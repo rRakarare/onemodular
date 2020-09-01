@@ -1,21 +1,32 @@
 .faqslide {
     outline: 2px solid $color-dark;
     outline-offset: .4rem;
-    background-color: $color-dark;
     display: inline-block;
     font-weight: 800;
     text-decoration: none;
     padding: .1rem 2.2rem;
-    color: #fff;
+    color: $color-dark;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: .15rem;
-    transition: all .3s;
+    transition: all .4s;
     position: relative;
     overflow: hidden;
     z-index: 1;
     width: 80%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    &-content {
+        max-height: 0;
+        overflow: hidden;
+        width: 80%;
+        transition: max-height 0.2s ease-out;
+
+        & p {
+            font-size: 1.3rem;
+        }
+    }
 
     &>p {
         margin-left: 3rem;
@@ -38,10 +49,6 @@
         font-weight: 100;
     }
 
-    &:hover p:after {
-        content: "lorem asd qwe dfasdd dasd";
-        color: $color-dark;
-    }
 
 
 
@@ -62,15 +69,22 @@
 
     &:hover {
 
-        color: $color-dark;
 
         &:before {
             transform: translateX(0) skewX(-45deg);
         }
 
-        &>p>span {
-            display: none;
+    }
+
+    &.active {
+        & .content {
+            margin-bottom: 2rem;
         }
+
+        &:before {
+            transform: translateX(0) skewX(-45deg);
+        }
+
     }
 }
 

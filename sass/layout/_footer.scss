@@ -1,0 +1,40 @@
+.footer {
+    padding: 3rem 0 3rem 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/pattern/pattern.png);
+    background-color: rgba($color: $color-light, $alpha: .2);
+    text-align: center;
+    color: $color-dark;
+    height: 400px;
+
+    &-box {
+        display: inline-block;
+        width: 430px;
+        padding-left: auto;
+    }
+
+    & h5 {
+        font-size: 2rem;
+    }
+
+    & p {
+        & i {
+            padding-top: 3px;
+        }
+    }
+
+    & svg {
+        display: inline-block;
+    }
+
+    & a {
+        margin-top: 1rem;
+        display: block;
+        text-decoration: none;
+        font-weight: 600;
+        color: $color-dark;
+    }
+}

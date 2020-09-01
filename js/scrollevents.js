@@ -100,12 +100,12 @@ let wir_scene = new ScrollMagic.Scene({
     })
     .on("enter", function () {
         wir_nav_item.forEach(item => {
-            item.classList.add('active-light')
+            item.classList.add('active-dark')
         })
     })
     .on("leave", function () {
         wir_nav_item.forEach(item => {
-            item.classList.remove('active-light')
+            item.classList.remove('active-dark')
         })
     })
     //.addIndicators() // add indicators (requires plugin)
@@ -188,7 +188,7 @@ new ScrollMagic.Scene({
         triggerElement: "#wir",
 
     })
-    .setClassToggle(".wir-cap-heading", "active-light")
+    .setClassToggle(".wir-cap-heading", "active-dark")
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller2);
 
@@ -218,40 +218,40 @@ var controller3 = new ScrollMagic.Controller({
 
 ///// LOGO //////
 
-let logo_wir_scene = new ScrollMagic.Scene({
-        triggerElement: "#wir",
-        duration: wir.clientHeight
-    })
-    .on("enter", function () {
-        document.querySelectorAll('.logoanimate').forEach(item => {
-            item.classList.add('active-light')
-        })
-        document.querySelectorAll('.hamline').forEach(item => {
-            item.classList.add('white-light')
-        })
+// let logo_wir_scene = new ScrollMagic.Scene({
+//         triggerElement: "#wir",
+//         duration: wir.clientHeight
+//     })
+//     .on("enter", function () {
+//         document.querySelectorAll('.logoanimate').forEach(item => {
+//             item.classList.add('active-light')
+//         })
+//         document.querySelectorAll('.hamline').forEach(item => {
+//             item.classList.add('white-light')
+//         })
 
 
-        document.querySelector('.animatestroke').classList.add('stroke-white')
-        document.querySelector('.navline').classList.add('line-white')
-        Array.from(hamburger.children).forEach(item => {
-            item.classList.add('white')
-        })
-    })
-    .on("leave", function () {
-        document.querySelectorAll('.logoanimate').forEach(item => {
-            item.classList.remove('active-light')
-        })
-        document.querySelectorAll('.hamline').forEach(item => {
-            item.classList.remove('white-light')
-        })
-        document.querySelector('.animatestroke').classList.remove('stroke-white')
-        document.querySelector('.navline').classList.remove('line-white')
-        Array.from(hamburger.children).forEach(item => {
-            item.classList.remove('white')
-        })
-    })
-    //.addIndicators() // add indicators (requires plugin)
-    .addTo(controller3);
+//         document.querySelector('.animatestroke').classList.add('stroke-white')
+//         document.querySelector('.navline').classList.add('line-white')
+//         Array.from(hamburger.children).forEach(item => {
+//             item.classList.add('white')
+//         })
+//     })
+//     .on("leave", function () {
+//         document.querySelectorAll('.logoanimate').forEach(item => {
+//             item.classList.remove('active-light')
+//         })
+//         document.querySelectorAll('.hamline').forEach(item => {
+//             item.classList.remove('white-light')
+//         })
+//         document.querySelector('.animatestroke').classList.remove('stroke-white')
+//         document.querySelector('.navline').classList.remove('line-white')
+//         Array.from(hamburger.children).forEach(item => {
+//             item.classList.remove('white')
+//         })
+//     })
+//     //.addIndicators() // add indicators (requires plugin)
+//     .addTo(controller3);
 
 //// BOXES /////
 
@@ -264,32 +264,14 @@ var controller4 = new ScrollMagic.Controller({
 
 
 
-async function scalein(a, b, c, d) {
-    a.classList.add('scale-in');
-    await timeout(100);
-    b.classList.add('scale-in');
-    await timeout(100);
-    c.classList.add('scale-in');
-    await timeout(100);
-    d.classList.add('scale-in');
-    await timeout(100);
-}
-
-async function scaleout(a, b, c, d) {
-    a.classList.remove('scale-in');
-    await timeout(100);
-    b.classList.remove('scale-in');
-    await timeout(100);
-    c.classList.remove('scale-in');
-    await timeout(100);
-    d.classList.remove('scale-in');
-    await timeout(100);
-}
 
 let box1 = document.querySelector('.box-1');
 let box2 = document.querySelector('.box-2');
 let box3 = document.querySelector('.box-3');
 let box4 = document.querySelector('.box-4');
+
+var timeouts = [];
+
 
 let boxes_scale_scene = new ScrollMagic.Scene({
         triggerElement: "#boxes",
@@ -298,11 +280,44 @@ let boxes_scale_scene = new ScrollMagic.Scene({
 
 
     .on("enter", function () {
-        scalein(box1, box2, box3, box4)
+
+        for (var i = 0; i < timeouts.length; i++) {
+            clearTimeout(timeouts[i]);
+        }
+
+        timeouts.push(setTimeout(() => {
+            box1.classList.add('scale-in');
+        }, 100))
+        timeouts.push(box2in = setTimeout(() => {
+            box2.classList.add('scale-in');
+        }, 200))
+        timeouts.push(box3in = setTimeout(() => {
+            box3.classList.add('scale-in');
+        }, 300))
+        timeouts.push(box4in = setTimeout(() => {
+            box4.classList.add('scale-in');
+        }, 400))
 
     })
     .on("leave", function () {
-        scaleout(box4, box3, box2, box1)
+
+        for (var i = 0; i < timeouts.length; i++) {
+            clearTimeout(timeouts[i]);
+        }
+
+        timeouts.push(box4out = setTimeout(() => {
+            box4.classList.remove('scale-in');
+        }, 100))
+        timeouts.push(box3out = setTimeout(() => {
+            box3.classList.remove('scale-in');
+        }, 200))
+        timeouts.push(box2out = setTimeout(() => {
+            box2.classList.remove('scale-in');
+        }, 300))
+        timeouts.push(box1out = setTimeout(() => {
+            box1.classList.remove('scale-in');
+        }, 400))
+
     })
     .addIndicators() // add indicators (requires plugin)
     .addTo(controller4);

@@ -1,5 +1,5 @@
 .header {
-    height: $header-height-full;
+    height: 100vh;
     display: block;
     background-image: linear-gradient(to right bottom,
             rgba($color-primary, 0.5),
@@ -8,15 +8,7 @@
     background-size: cover;
     background-position: top;
 
-    &>.wrapper>.flex-grid>.col {
-        height: $header-height-full;
-    }
+
 }
 
 @media only screen and (max-width: 980px) {}
-
-@media only screen and (max-height: 600px) {
-    .header {
-        height: 600px;
-    }
-}
