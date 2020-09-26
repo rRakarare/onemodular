@@ -684,6 +684,7 @@ section {
 
 .faqslide {
   outline: 2px solid #263238;
+  cursor: pointer;
   outline-offset: .4rem;
   display: inline-block;
   font-weight: 800;
@@ -691,11 +692,13 @@ section {
   padding: .1rem 2.2rem;
   color: #263238;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: .2rem;
   letter-spacing: .15rem;
   transition: all .6s;
   position: relative;
   overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   z-index: 1;
   width: 80%;
   margin-bottom: 1rem;
@@ -710,14 +713,14 @@ section {
   .faqslide > p {
     margin-left: 3rem;
     display: inline;
-    font-size: 1.5rem;
-    font-weight: 100; }
+    font-size: 1.2rem;
+    font-weight: 700; }
     .faqslide > p:after {
       color: transparent;
       transition: all 1s; }
   .faqslide > h3 {
     display: inline;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 100; }
   .faqslide:before {
     content: '';

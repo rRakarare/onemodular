@@ -1,5 +1,6 @@
 .faqslide {
     outline: 2px solid $color-dark;
+    cursor: pointer;
     outline-offset: .4rem;
     display: inline-block;
     font-weight: 800;
@@ -7,11 +8,13 @@
     padding: .1rem 2.2rem;
     color: $color-dark;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: .2rem;
     letter-spacing: .15rem;
     transition: all .6s;
     position: relative;
     overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     z-index: 1;
     width: 80%;
     margin-bottom: 1rem;
@@ -31,8 +34,8 @@
     &>p {
         margin-left: 3rem;
         display: inline;
-        font-size: 1.5rem;
-        font-weight: 100;
+        font-size: 1.2rem;
+        font-weight: 700;
 
 
         &:after {
@@ -45,7 +48,7 @@
 
     &>h3 {
         display: inline;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: 100;
     }
 
