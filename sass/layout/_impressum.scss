@@ -1,0 +1,18 @@
+.impressum {
+    &>.wrapper {
+
+        &>h1 {
+            font-size: 4rem;
+        }
+
+        &>h2 {
+            font-size: 2rem;
+        }
+
+        &>p {
+            margin-right: 20rem;
+            margin-left: 15rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

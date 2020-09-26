@@ -1,0 +1,17 @@
+.wrapp-rellax {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+
+    &-col {
+        width: 25%;
+        float: left;
+        box-sizing: border-box;
+
+        &-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

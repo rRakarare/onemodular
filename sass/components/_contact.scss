@@ -1,12 +1,13 @@
 .contact {
-    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    padding: 30px;
     width: 500px;
     height: 600px;
     border: 2px solid $color-dark;
     position: relative;
 
     &>h2 {
-        width: 480px;
+        width: 420px;
         position: absolute;
         top: 1rem;
         text-align: center;
@@ -15,7 +16,9 @@
     }
 
     &>ul {
-        width: 450px;
+        list-style: decimal-leading-zero;
+        ;
+        width: 410px;
         margin-left: 30px;
         position: absolute;
         top: 20%;
@@ -25,27 +28,28 @@
     }
 
     &>p {
-        width: 480px;
+        width: 420px;
         position: absolute;
         bottom: 30%;
         text-align: center;
         font-size: 1rem;
-        font-weight: 100;
+        font-weight: 700;
     }
 
     &-foot {
-        width: 480px;
+        width: 420px;
         position: absolute;
-        bottom: 1rem;
+        bottom: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
 
         &-frame {
             display: flex;
-            width: 70px;
-            height: 70px;
-            border: 2px solid $color-dark;
+            width: 60px;
+            height: 60px;
+            outline: 2px solid $color-dark;
+            outline-offset: .4rem;
             justify-content: center;
             transition: all .4s;
             position: relative;

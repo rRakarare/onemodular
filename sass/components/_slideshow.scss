@@ -1,0 +1,95 @@
+.slideshow-container {
+    height: 400px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    transition: transform 1s, opacity 1s;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    top: 100px;
+    left: 20%;
+    opacity: 0;
+    padding: 0 10rem 0 10rem;
+    transform: translateX(-100px);
+    outline: 2px solid $color-dark;
+    outline-offset: .9rem;
+    box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: .3);
+    background-size: cover;
+    background-image: linear-gradient(to right bottom,
+            rgba($color-primary, 0.1),
+            rgba($color-dark, 0.1)),
+        url("../img/slider/planen_comp.jpg");
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: $color-black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    color: $color-dark;
+}
+
+.fadeimgin {
+    opacity: 1;
+    transform: translateX(0px);
+
+}
+
+.fadeimgout {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 1s;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .1;
+        transform: translateX(-100px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}

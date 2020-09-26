@@ -4,11 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/pattern/pattern.png);
-    background-color: rgba($color: $color-light, $alpha: .2);
     text-align: center;
     color: $color-dark;
-    height: 400px;
 
     &-box {
         display: inline-block;
@@ -17,7 +14,7 @@
     }
 
     & h5 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     & p {
@@ -31,7 +28,7 @@
     }
 
     & a {
-        margin-top: 1rem;
+        margin-top: 0rem;
         display: block;
         text-decoration: none;
         font-weight: 600;

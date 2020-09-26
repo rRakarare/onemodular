@@ -25,6 +25,12 @@ body {
     color: $color-dark;
 }
 
+// ######## Prarallax ########
+
+.rellax-wrap {
+    position: absolute !important;
+}
+
 
 // ######## LOADER ########
 
@@ -54,7 +60,7 @@ section {
 
 
 .heading-1 {
-    margin-bottom: 9rem;
+    margin-bottom: 4rem;
     opacity: 0;
     font-size: 4rem;
     transform: translateY(10rem);

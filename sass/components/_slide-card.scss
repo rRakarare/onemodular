@@ -1,11 +1,11 @@
 .slidecard {
     width: 800px;
     height: 400px;
-    box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: .3);
     position: relative;
     display: flex;
     align-items: center;
     background-color: white;
+    box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: .3);
 
 
 
@@ -19,22 +19,43 @@
 
         &-cube {
             display: inline-block;
+            position: relative;
             border: 3px solid rgba($color: $color-dark, $alpha: 1);
             margin-left: 2rem;
             width: 20px;
             height: 20px;
             transition: transform .3s ease;
             cursor: pointer;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                transform-origin: 0 0;
+                background-color: darken($color-dark, 0%);
+                transition: all .3s;
+                z-index: -1;
+            }
 
             &.active {
-                transform: scale(1.2);
                 transform: rotate(45deg);
-                background-color: $color-dark;
+
+                &:before {
+                    width: 100%;
+                }
             }
 
             &:hover {
-                transform: scale(1.2);
                 transform: rotate(45deg);
+
+                &:before {
+                    width: 100%;
+                }
             }
         }
 
@@ -63,13 +84,15 @@
         }
 
         &-image {
+            outline: 2px solid $color-dark;
+            outline-offset: .9rem;
             box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: .3);
             background-size: cover;
             height: 250px;
             width: 250px;
             position: absolute;
             top: 2rem;
-            left: -4rem;
+            left: -8rem;
             transition: transform 1s, opacity 1s;
             opacity: 0;
             transform: translateX(-5rem);
@@ -100,7 +123,7 @@
 
         &-heading {
             top: 40%;
-            right: 30%;
+            left: 30%;
             position: absolute;
             font-size: 2rem;
             text-transform: uppercase;
@@ -113,9 +136,10 @@
         }
 
         &-text {
-            width: 50%;
+            width: 60%;
             bottom: 2rem;
             right: 2rem;
+            font-size: 1.1rem;
             position: absolute;
             opacity: 0;
             transform: translateY(5rem);

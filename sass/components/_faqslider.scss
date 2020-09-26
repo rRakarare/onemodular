@@ -9,7 +9,7 @@
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: .15rem;
-    transition: all .4s;
+    transition: all .6s;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -21,7 +21,7 @@
         max-height: 0;
         overflow: hidden;
         width: 80%;
-        transition: max-height 0.2s ease-out;
+        transition: max-height 0.4s ease-out;
 
         & p {
             font-size: 1.3rem;
@@ -62,7 +62,7 @@
         transform-origin: 0 0;
         transform: translateX(-100%) skewX(-45deg);
         background-color: darken($color-primary, 0%);
-        transition: all .3s;
+        transition: all .8s;
 
         z-index: -1;
     }
