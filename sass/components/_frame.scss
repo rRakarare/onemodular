@@ -1,12 +1,12 @@
 .frame {
     position: relative;
-    width: 500px;
-    height: 300px;
+    width: $parent-width;
+    height: $parent-height;
 
 
     &-pic {
-        width: 150px;
-        height: 150px;
+        width: $parent-width/3.3;
+        height: $parent-height/3.3;
         border: solid $color-dark 3px;
         transition: all .2s;
         position: absolute;
@@ -16,7 +16,7 @@
         padding: 0 1rem 0 1rem;
 
         &-1 {
-            top: 170px;
+            top: 33%;
             left: 0;
 
             &:hover p:after {
@@ -25,8 +25,8 @@
         }
 
         &-2 {
-            top: 170px;
-            left: 170px;
+            top: 33%;
+            left: 33%;
 
             &:hover p:after {
                 content: "Umsetzung aller BIM-Dimensionen";
@@ -34,9 +34,9 @@
         }
 
         &-3 {
-            top: 340px;
+            top: 66%;
 
-            left: 170px;
+            left: 33%;
 
             &:hover p:after {
                 content: "Visualisierungen aller Art";
@@ -46,7 +46,17 @@
         &-4 {
             top: 0px;
 
-            left: 170px;
+            left: 33%;
+
+            &:hover p:after {
+                content: "Visualisierungen aller Art";
+            }
+        }
+
+        &-5 {
+            top: 33%;
+
+            left: 66%;
 
             &:hover p:after {
                 content: "Visualisierungen aller Art";
@@ -86,4 +96,30 @@
     }
 
 
+}
+
+@media only screen and (max-width: 600px) {
+    $parent-height: 230px;
+    $parent-width: 230px;
+
+    .frame {
+        width: $parent-width;
+        height: $parent-height;
+
+        &-pic {
+            width: $parent-width/3.3;
+            height: $parent-height/3.3;
+            padding: 0 0 0 0;
+
+            &:hover {
+
+
+                & p {
+                    font-size: 1.1rem;
+
+                }
+            }
+
+        }
+    }
 }

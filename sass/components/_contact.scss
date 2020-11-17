@@ -1,45 +1,28 @@
 .contact {
     margin: 10px;
     padding: 30px;
-    width: 500px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     border: 2px solid $color-dark;
     position: relative;
 
     &>h2 {
-        width: 420px;
-        position: absolute;
         top: 1rem;
         text-align: center;
         font-size: 3rem;
         font-weight: 100;
     }
 
-    &>ul {
-        list-style: decimal-leading-zero;
-        ;
-        width: 410px;
-        margin-left: 30px;
-        position: absolute;
-        top: 20%;
-        text-align: left;
-        font-size: 1rem;
-        font-weight: 100;
-    }
+
 
     &>p {
-        width: 420px;
-        position: absolute;
-        bottom: 30%;
         text-align: center;
         font-size: 1rem;
         font-weight: 700;
     }
 
     &-foot {
-        width: 420px;
-        position: absolute;
-        bottom: 3rem;
+        margin-top: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -97,3 +80,6 @@
         }
     }
 }
+
+
+@media only screen and (max-width: 600px) {}

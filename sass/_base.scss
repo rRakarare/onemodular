@@ -54,7 +54,7 @@ section {
 
 @media only screen and (max-height: 800px) {
     section {
-        height: 800px !important;
+        height: fit-content;
     }
 }
 
@@ -81,11 +81,16 @@ section {
     }
 }
 
-
+@media only screen and (max-width: 1600px) {
+    .wrapper {
+        margin-left: 15rem;
+        margin-right: 10rem;
+    }
+}
 
 @media only screen and (max-width: 1260px) {
     .heading-1 {
-        margin: 0 0 0 5rem;
+        margin: 0 0 3rem 4rem;
     }
 }
 
@@ -93,7 +98,7 @@ section {
     .heading-1 {
         font-size: 3rem;
         line-height: 3.2rem;
-        margin: 0;
+        margin: 0 0 3rem 0;
     }
 }
 
@@ -101,5 +106,10 @@ section {
     .heading-1 {
         font-size: 2rem;
         line-height: 3.2rem;
+    }
+
+    .wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
