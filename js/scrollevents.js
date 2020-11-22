@@ -216,42 +216,6 @@ var controller3 = new ScrollMagic.Controller({
     }
 });
 
-///// LOGO //////
-
-// let logo_wir_scene = new ScrollMagic.Scene({
-//         triggerElement: "#wir",
-//         duration: wir.clientHeight
-//     })
-//     .on("enter", function () {
-//         document.querySelectorAll('.logoanimate').forEach(item => {
-//             item.classList.add('active-light')
-//         })
-//         document.querySelectorAll('.hamline').forEach(item => {
-//             item.classList.add('white-light')
-//         })
-
-
-//         document.querySelector('.animatestroke').classList.add('stroke-white')
-//         document.querySelector('.navline').classList.add('line-white')
-//         Array.from(hamburger.children).forEach(item => {
-//             item.classList.add('white')
-//         })
-//     })
-//     .on("leave", function () {
-//         document.querySelectorAll('.logoanimate').forEach(item => {
-//             item.classList.remove('active-light')
-//         })
-//         document.querySelectorAll('.hamline').forEach(item => {
-//             item.classList.remove('white-light')
-//         })
-//         document.querySelector('.animatestroke').classList.remove('stroke-white')
-//         document.querySelector('.navline').classList.remove('line-white')
-//         Array.from(hamburger.children).forEach(item => {
-//             item.classList.remove('white')
-//         })
-//     })
-//     //.addIndicators() // add indicators (requires plugin)
-//     .addTo(controller3);
 
 //// BOXES /////
 
@@ -319,5 +283,5 @@ let boxes_scale_scene = new ScrollMagic.Scene({
         }, 400))
 
     })
-    .addIndicators() // add indicators (requires plugin)
+   // .addIndicators() // add indicators (requires plugin)
     .addTo(controller4);

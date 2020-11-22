@@ -1,11 +1,11 @@
 .card {
     display: inline-flex;
-
+    box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: .3);
     width: fit-content;
     height: fit-content;
     flex-flow: column;
     justify-content: space-between;
-    background-color: rgba($color: $color-white, $alpha: 0.8);
+    background-color: rgba($color: $color-white, $alpha: 1);
     padding-top: 3rem;
     padding-bottom: 3rem;
 

@@ -176,7 +176,7 @@
 
 
         <section class="digital navto" id="digitalisierung">
-            <div class="wrapp-rellax">
+            <div class="wrapp-rellax-1">
                 <div class="wrapp-rellax-col">
                     <div class="wrapp-rellax-col-container">
                         <br>
@@ -213,13 +213,13 @@
                                 <p class="frame-text frame-text-1"><span>3D</span></p>
                             </div>
                             <div class="frame-pic frame-pic-2">
-                                <p class="frame-text frame-text-1"><span>4D</span></p>
-                            </div>
-                            <div class="frame-pic frame-pic-3">
                                 <p class="frame-text frame-text-1"><span>5D</span></p>
                             </div>
-                            <div class="frame-pic frame-pic-4">
+                            <div class="frame-pic frame-pic-3">
                                 <p class="frame-text frame-text-1"><span>6D</span></p>
+                            </div>
+                            <div class="frame-pic frame-pic-4">
+                                <p class="frame-text frame-text-1"><span>4D</span></p>
                             </div>
                             <div class="frame-pic frame-pic-5">
                                 <p class="frame-text frame-text-1"><span>7D</span></p>
@@ -258,7 +258,7 @@
         </section>
 
         <section class="bim5d navto" id="bim5d">
-            <div class="wrapp-rellax">
+            <div class="wrapp-rellax-2">
                 <div class="wrapp-rellax-col">
                     <div class="wrapp-rellax-col-container">
                         <div class="rellax" style="transition: transform 5s cubic-bezier(0,1,.5,1);"
@@ -379,7 +379,7 @@
     </section>
 
     <section class="faq navto" id="faq">
-        <div class="wrapp-rellax">
+        <div class="wrapp-rellax-3">
             <div class="wrapp-rellax-col">
                 <div class="wrapp-rellax-col-container">
                     <br>
@@ -509,11 +509,11 @@
                         <h2>Interesse geweckt ?</h2>
                         <p>Zögern Sie nicht uns unverbindlich zu kontaktieren – wir freuen uns auf das Gespräch!</p>
                         <div class="contact-foot">
-                            <a href="#" class="contact-foot-frame contact-foot-frame-1">
+                            <a href="tel:+49 641 20990515" class="contact-foot-frame contact-foot-frame-1">
                                 <img class="contact-foot-icon contact-foot-icon-1" src="img/icons/phone-solid.svg"
                                     alt="">
                             </a>
-                            <a href="#" class="contact-foot-frame contact-foot-frame-2">
+                            <a href= "mailto:info@m-1.de" class="contact-foot-frame contact-foot-frame-2">
                                 <img class="contact-foot-icon contact-foot-icon-2" src="img/icons/envelope-solid.svg"
                                     alt="">
                             </a>
@@ -597,13 +597,24 @@
         
         var rellax = new Rellax('.rellax', {});
 
-        var rellaxwrap = document.querySelector('.wrapp-rellax')
+        var rellaxwrap1 = document.querySelector('.wrapp-rellax-1')
+        var rellaxwrap2 = document.querySelector('.wrapp-rellax-2')
+        var rellaxwrap3 = document.querySelector('.wrapp-rellax-3')
+
+        if (window.innerWidth < 1280) {
+            rellax.destroy();
+                rellaxwrap1.style.display='none'
+                rellaxwrap2.style.display='none'
+                rellaxwrap3.style.display='none'
+        }        
 
         window.addEventListener('resize', () => {
             if (window.innerWidth < 1280) {
                 console.log('asdads')
                 rellax.destroy();
-                rellaxwrap.style.display='none'
+                rellaxwrap1.style.display='none'
+                rellaxwrap2.style.display='none'
+                rellaxwrap3.style.display='none'
                 
             }
             

@@ -1,6 +1,6 @@
 .slideshow-container {
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     position: relative;
     margin: auto;
 }
@@ -9,9 +9,9 @@
 .mySlides {
     transition: transform 1s, opacity 1s;
     position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 100px;
+    width: 260px;
+    height: 260px;
+    top: 130px;
     left: 10%;
     opacity: 0;
     transform: translateX(-100px);
@@ -19,10 +19,28 @@
     outline-offset: .9rem;
     box-shadow: 0 1.5rem 2rem rgba($color: $color-black, $alpha: .3);
     background-size: cover;
-    background-image: linear-gradient(to right bottom,
-            rgba($color-primary, 0.1),
-            rgba($color-dark, 0.1)),
-        url("../img/slider/planen_comp.jpg");
+
+
+    &-1 {
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary, 0.1),
+                rgba($color-dark, 0.1)),
+            url("../img/slider1/1-comp.jpg");
+    }
+
+    &-2 {
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary, 0.1),
+                rgba($color-dark, 0.1)),
+            url("../img/slider1/2-comp.jpg");
+    }
+
+    &-3 {
+        background-image: linear-gradient(to right bottom,
+                rgba($color-primary, 0.1),
+                rgba($color-dark, 0.1)),
+            url("../img/slider1/3-comp.jpg");
+    }
 }
 
 /* Next & previous buttons */

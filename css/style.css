@@ -305,11 +305,12 @@ section {
 
 .card {
   display: inline-flex;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
   width: fit-content;
   height: fit-content;
   flex-flow: column;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: white;
   padding-top: 3rem;
   padding-bottom: 3rem; }
   .card-heading {
@@ -673,27 +674,27 @@ section {
       top: 33%;
       left: 0; }
       .frame-pic-1:hover p:after {
-        content: "Die digitale Zukunft der Baubranche"; }
+        content: "Digitales Modell"; }
     .frame-pic-2 {
       top: 33%;
       left: 33%; }
       .frame-pic-2:hover p:after {
-        content: "Umsetzung aller BIM-Dimensionen"; }
+        content: "Kosten"; }
     .frame-pic-3 {
       top: 66%;
       left: 33%; }
       .frame-pic-3:hover p:after {
-        content: "Visualisierungen aller Art"; }
+        content: "Nachhaltigkeit"; }
     .frame-pic-4 {
       top: 0px;
       left: 33%; }
       .frame-pic-4:hover p:after {
-        content: "Visualisierungen aller Art"; }
+        content: "Zeit"; }
     .frame-pic-5 {
       top: 33%;
       left: 66%; }
       .frame-pic-5:hover p:after {
-        content: "Visualisierungen aller Art"; }
+        content: "Betrieb"; }
     .frame-pic:hover {
       background-color: #263238;
       transform: scale(1.08) translateY(-0.4rem);
@@ -1088,8 +1089,8 @@ section {
       justify-content: center; }
 
 .slideshow-container {
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   position: relative;
   margin: auto; }
 
@@ -1097,17 +1098,22 @@ section {
 .mySlides {
   transition: transform 1s, opacity 1s;
   position: absolute;
-  width: 200px;
-  height: 200px;
-  top: 100px;
+  width: 260px;
+  height: 260px;
+  top: 130px;
   left: 10%;
   opacity: 0;
   transform: translateX(-100px);
   outline: 2px solid #263238;
   outline-offset: .9rem;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
-  background-size: cover;
-  background-image: linear-gradient(to right bottom, rgba(247, 209, 71, 0.1), rgba(38, 50, 56, 0.1)), url("../img/slider/planen_comp.jpg"); }
+  background-size: cover; }
+  .mySlides-1 {
+    background-image: linear-gradient(to right bottom, rgba(247, 209, 71, 0.1), rgba(38, 50, 56, 0.1)), url("../img/slider1/1-comp.jpg"); }
+  .mySlides-2 {
+    background-image: linear-gradient(to right bottom, rgba(247, 209, 71, 0.1), rgba(38, 50, 56, 0.1)), url("../img/slider1/2-comp.jpg"); }
+  .mySlides-3 {
+    background-image: linear-gradient(to right bottom, rgba(247, 209, 71, 0.1), rgba(38, 50, 56, 0.1)), url("../img/slider1/3-comp.jpg"); }
 
 /* Next & previous buttons */
 .prev,
@@ -1169,9 +1175,10 @@ section {
 .header {
   height: 100vh;
   display: block;
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/head.jpg");
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../img/head-1.jpg");
   background-size: cover;
-  background-position: top; }
+  background-position: top;
+  padding: 0 !important; }
 
 .digital {
   border-bottom: 3px #263238;
