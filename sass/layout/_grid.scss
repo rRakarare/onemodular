@@ -29,29 +29,11 @@
     align-self: flex-start;
 }
 
-@media only screen and (max-width: 1260px) {
-    .wrapper {
-        margin-left: 8rem;
-        margin-right: 8rem;
-    }
 
-}
+@media only screen and (max-width: 1200px) {
 
-@media only screen and (max-width: 980px) {
-    .wrapper {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
 
     .flex-grid {
         display: block;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-
-    .wrapper {
-        margin-left: 2rem;
-        margin-right: 2rem;
     }
 }

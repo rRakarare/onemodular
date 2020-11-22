@@ -1,10 +1,6 @@
 .datenschutz {
     &>.wrapper {
 
-        &>h1 {
-            font-size: 4rem;
-        }
-
         &>p {
             margin-right: 20rem;
             margin-left: 5rem;
@@ -13,13 +9,11 @@
         }
 
         &>h4 {
-            margin-right: 20rem;
             font-size: 2rem;
             margin-bottom: 1rem;
         }
 
         &>h3 {
-            margin-right: 20rem;
             font-size: 1rem;
             margin-left: 5rem;
             margin-bottom: 0.3rem;
@@ -35,7 +29,6 @@
             }
 
             &>h4 {
-                margin-right: 20rem;
 
                 font-size: 1.5rem;
                 margin-bottom: 1rem;
@@ -50,4 +43,168 @@
     }
 
 
+}
+
+@media only screen and (max-width: 1260px) {
+    .datenschutz {
+        &>.wrapper {
+
+            &>p {
+                margin-right: 6rem;
+                margin-left: 5rem;
+                margin-bottom: 2rem;
+
+            }
+
+            &>h4 {
+
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+
+            &>h3 {
+
+                font-size: 1rem;
+                margin-left: 5rem;
+                margin-bottom: 0.3rem;
+            }
+
+            &>ul>li {
+                &>ul>li {
+                    margin-right: 6rem;
+                    font-size: 1rem;
+                    margin-left: 5rem;
+                    margin-bottom: 0.7rem;
+                    font-weight: 600;
+                }
+
+                &>h4 {
+
+
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                &>p {
+                    margin-right: 6rem;
+                    margin-left: 5rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .datenschutz {
+        &>.wrapper {
+
+            &>h1 {
+                margin-left: 10rem;
+            }
+
+            &>p {
+                margin-right: 4rem;
+                margin-left: 4rem;
+                margin-bottom: 2rem;
+
+            }
+
+            &>h4 {
+
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+
+            &>h3 {
+
+                font-size: 1rem;
+                margin-left: 5rem;
+                margin-bottom: 0.3rem;
+            }
+
+            &>ul>li {
+                &>ul>li {
+                    margin-right: 6rem;
+                    font-size: 1rem;
+                    margin-left: 5rem;
+                    margin-bottom: 0.7rem;
+                    font-weight: 600;
+                }
+
+                &>h4 {
+
+
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                &>p {
+                    margin-right: 6rem;
+                    margin-left: 5rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .datenschutz {
+        &>.wrapper {
+
+            &>h1 {
+                margin-left: 7rem;
+            }
+
+            &>p {
+                margin-right: 2rem;
+                margin-left: 2rem;
+                margin-bottom: 2rem;
+
+            }
+
+            &>h4 {
+
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+            }
+
+            &>h3 {
+
+                font-size: 1rem;
+                margin-left: 5rem;
+                margin-bottom: 0.3rem;
+            }
+
+            &>ul>li {
+                &>ul>li {
+                    margin-right: 2rem;
+                    font-size: 1rem;
+                    margin-left: 2rem;
+                    margin-bottom: 0.7rem;
+                    font-weight: 600;
+                }
+
+                &>h4 {
+
+
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                &>p {
+                    margin-right: 1rem;
+                    margin-left: 3rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+
+    }
 }

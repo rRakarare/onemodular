@@ -71,14 +71,14 @@
         z-index: -1;
     }
 
-    &:hover {
+    // &:hover {
 
 
-        &:before {
-            transform: translateX(0) skewX(-45deg);
-        }
+    //     &:before {
+    //         transform: translateX(0) skewX(-45deg);
+    //     }
 
-    }
+    // }
 
     &.active {
         & .content {

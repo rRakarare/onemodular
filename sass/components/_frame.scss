@@ -71,7 +71,9 @@
 
             & p {
                 color: white;
+                hyphens: auto;
                 font-size: 1.1rem;
+
 
                 & span {
                     display: none;
@@ -98,9 +100,43 @@
 
 }
 
+
+
+@media only screen and (max-width: 1260px) {
+    $parent-height: 420px;
+    $parent-width: 420px;
+
+    .frame {
+        width: $parent-width;
+        height: $parent-height;
+
+        &-pic {
+            width: $parent-width/3.3;
+            height: $parent-height/3.3;
+            padding: 0 0 0 0;
+
+            &:hover {
+
+
+                & p {
+                    font-size: 1.4rem;
+
+                    &:after {
+                        font-size: .9rem;
+                        hyphens: auto;
+
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
 @media only screen and (max-width: 600px) {
-    $parent-height: 230px;
-    $parent-width: 230px;
+    $parent-height: 260px;
+    $parent-width: 260px;
 
     .frame {
         width: $parent-width;
@@ -116,6 +152,12 @@
 
                 & p {
                     font-size: 1.1rem;
+
+                    &:after {
+                        font-size: .6rem;
+                        hyphens: auto;
+
+                    }
 
                 }
             }

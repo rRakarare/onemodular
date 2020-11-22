@@ -90,7 +90,12 @@ section {
 
 @media only screen and (max-width: 1260px) {
     .heading-1 {
-        margin: 0 0 3rem 4rem;
+        font-size: 3rem;
+    }
+
+    .wrapper {
+        margin-left: 15rem;
+        margin-right: 8rem;
     }
 }
 
@@ -99,6 +104,11 @@ section {
         font-size: 3rem;
         line-height: 3.2rem;
         margin: 0 0 3rem 0;
+    }
+
+    .wrapper {
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
 
@@ -109,7 +119,7 @@ section {
     }
 
     .wrapper {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: .8rem !important;
+        margin-right: .8rem !important;
     }
 }
