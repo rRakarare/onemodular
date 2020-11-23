@@ -1,18 +1,16 @@
 .slideshow-container {
-    height: 500px;
-    width: 500px;
+    margin-top: 5rem;
     position: relative;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Hide the images by default */
 .mySlides {
     transition: transform 1s, opacity 1s;
-    position: absolute;
     width: 260px;
     height: 260px;
-    top: 130px;
-    left: 10%;
     opacity: 0;
     transform: translateX(-100px);
     outline: 2px solid $color-dark;
@@ -22,6 +20,7 @@
 
 
     &-1 {
+        position: relative;
         background-image: linear-gradient(to right bottom,
                 rgba($color-primary, 0.1),
                 rgba($color-dark, 0.1)),
@@ -29,6 +28,7 @@
     }
 
     &-2 {
+        position: absolute;
         background-image: linear-gradient(to right bottom,
                 rgba($color-primary, 0.1),
                 rgba($color-dark, 0.1)),
@@ -36,6 +36,7 @@
     }
 
     &-3 {
+        position: absolute;
         background-image: linear-gradient(to right bottom,
                 rgba($color-primary, 0.1),
                 rgba($color-dark, 0.1)),
@@ -49,7 +50,7 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    right: 0rem;
+    right: 10%;
     width: auto;
     margin-top: -22px;
     padding: 16px;

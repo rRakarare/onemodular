@@ -7,6 +7,7 @@ cubes[0].addEventListener('click', () => {
         return;
     } else {
         slides[0].style.zIndex = 1;
+        slides[0].style.position = 'relative';
         slides[0].classList.add('active')
         cubes[0].classList.add('active')
     }
@@ -15,12 +16,14 @@ cubes[0].addEventListener('click', () => {
         slides[1].style.zIndex = 0;
         slides[1].classList.remove('active')
         cubes[1].classList.remove('active')
+        slides[1].style.position = 'absolute';
     }
 
     if (cubes[2].classList.contains("active")) {
         slides[2].style.zIndex = 0;
         slides[2].classList.remove('active')
         cubes[2].classList.remove('active')
+        slides[2].style.position = 'absolute';
     }
 
 });
@@ -30,6 +33,7 @@ cubes[1].addEventListener('click', () => {
         return;
     } else {
         slides[1].style.zIndex = 1;
+        slides[1].style.position = 'relative';
         slides[1].classList.add('active')
         cubes[1].classList.add('active')
     }
@@ -38,12 +42,14 @@ cubes[1].addEventListener('click', () => {
         slides[0].style.zIndex = 0;
         slides[0].classList.remove('active')
         cubes[0].classList.remove('active')
+        slides[0].style.position = 'absolute';
     }
 
     if (cubes[2].classList.contains("active")) {
         slides[2].style.zIndex = 0;
         slides[2].classList.remove('active')
         cubes[2].classList.remove('active')
+        slides[2].style.position = 'absolute';
     }
 
 });
@@ -53,6 +59,7 @@ cubes[2].addEventListener('click', () => {
         return;
     } else {
         slides[2].style.zIndex = 1;
+        slides[2].style.position = 'relative';
         slides[2].classList.add('active')
         cubes[2].classList.add('active')
     }
@@ -61,12 +68,14 @@ cubes[2].addEventListener('click', () => {
         slides[0].style.zIndex = 0;
         slides[0].classList.remove('active')
         cubes[0].classList.remove('active')
+        slides[0].style.position = 'absolute';
     }
 
     if (cubes[1].classList.contains("active")) {
         slides[1].style.zIndex = 0;
         slides[1].classList.remove('active')
         cubes[1].classList.remove('active')
+        slides[1].style.position = 'absolute';
     }
 
 });
