@@ -1,0 +1,15 @@
+#potentiale {
+    .col {
+        height: 500px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    #potentiale {
+        .col {
+            height: fit-content;
+        }
+
+    }
+}

@@ -1,16 +1,16 @@
-let digitalisierung = document.querySelector('#digitalisierung')
+let digitalisierung = document.querySelector('#newnormal')
 let digitalisierung_nav_item = document.querySelectorAll('.digitalisierung-nav-item')
 
-let bim5d = document.querySelector('#bim5d')
+let bim5d = document.querySelector('#potentiale')
 let bim5d_nav_item = document.querySelectorAll('.bim5d-nav-item')
 
 let home = document.querySelector('#home')
 let home_nav_item = document.querySelectorAll('.home-nav-item')
 
-let wir = document.querySelector('#wir')
+let wir = document.querySelector('#kontakt')
 let wir_nav_item = document.querySelectorAll('.wir-nav-item')
 
-let boxes = document.querySelector('#boxes')
+let boxes = document.querySelector('#prozess')
 let boxes_nav_item = document.querySelectorAll('.boxes-nav-item')
 
 let faq = document.querySelector('#faq')
@@ -58,7 +58,7 @@ let home_scene = new ScrollMagic.Scene({
 
 
 let digitalisierung_scene = new ScrollMagic.Scene({
-        triggerElement: "#digitalisierung",
+        triggerElement: "#newnormal",
         duration: digitalisierung.clientHeight
     })
     .on("enter", function () {
@@ -77,7 +77,7 @@ let digitalisierung_scene = new ScrollMagic.Scene({
 
 
 let bim5d_scene = new ScrollMagic.Scene({
-        triggerElement: "#bim5d",
+        triggerElement: "#potentiale",
         duration: bim5d.clientHeight
     })
     .on("enter", function () {
@@ -95,7 +95,7 @@ let bim5d_scene = new ScrollMagic.Scene({
 
 
 let wir_scene = new ScrollMagic.Scene({
-        triggerElement: "#wir",
+        triggerElement: "#kontakt",
         duration: wir.clientHeight
     })
     .on("enter", function () {
@@ -113,7 +113,7 @@ let wir_scene = new ScrollMagic.Scene({
 
 
 let boxes_scene = new ScrollMagic.Scene({
-        triggerElement: "#boxes",
+        triggerElement: "#prozess",
         duration: boxes.clientHeight
     })
     .on("enter", function () {
@@ -169,7 +169,7 @@ new ScrollMagic.Scene({
 
 
 new ScrollMagic.Scene({
-        triggerElement: "#digitalisierung",
+        triggerElement: "#newnormal",
 
     })
     .setClassToggle(".digitalisierung-cap-heading", "active-dark")
@@ -177,7 +177,7 @@ new ScrollMagic.Scene({
     .addTo(controller2);
 
 new ScrollMagic.Scene({
-        triggerElement: "#bim5d",
+        triggerElement: "#potentiale",
 
     })
     .setClassToggle(".bim5d-cap-heading", "active-dark")
@@ -185,7 +185,7 @@ new ScrollMagic.Scene({
     .addTo(controller2);
 
 new ScrollMagic.Scene({
-        triggerElement: "#wir",
+        triggerElement: "#kontakt",
 
     })
     .setClassToggle(".wir-cap-heading", "active-dark")
@@ -193,7 +193,7 @@ new ScrollMagic.Scene({
     .addTo(controller2);
 
 new ScrollMagic.Scene({
-        triggerElement: "#boxes",
+        triggerElement: "#prozess",
 
     })
     .setClassToggle(".boxes-cap-heading", "active-dark")
@@ -238,7 +238,7 @@ var timeouts = [];
 
 
 let boxes_scale_scene = new ScrollMagic.Scene({
-        triggerElement: "#boxes",
+        triggerElement: "#prozess",
         duration: boxes.clientHeight
     })
 

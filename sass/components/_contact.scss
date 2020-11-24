@@ -21,11 +21,28 @@
         font-weight: 700;
     }
 
+    &-foot2 {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div:not(:first-child) {
+            margin-left: 1rem;
+        }
+
+    }
+
+
     &-foot {
         margin-top: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        div:not(:first-child) {
+            margin-left: 1rem;
+        }
 
         &-frame {
             display: flex;
@@ -62,6 +79,7 @@
                     transform: translateX(0) skewX(-45deg);
                 }
 
+
             }
 
             &-1 {
@@ -81,5 +99,97 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .contact {
+        margin-top: 60px;
+        padding: 30px;
+        width: 400px;
+        height: fit-content;
+        border: 2px solid $color-dark;
+        position: relative;
+    }
+}
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .contact {
+        padding: 30px;
+        width: 400px;
+        height: fit-content;
+        border: 2px solid $color-dark;
+        position: relative;
+
+        &>h2 {
+            top: 1rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 100;
+        }
+
+
+
+        &>p {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        &-foot {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-frame {
+                display: flex;
+                width: 50px;
+                height: 50px;
+                outline: 2px solid $color-dark;
+                outline-offset: .4rem;
+                justify-content: center;
+                transition: all .4s;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 200%;
+                    height: 200%;
+                    transform-origin: 0 0;
+                    transform: translateX(-100%) skewX(-45deg);
+                    background-color: darken($color-primary, 0%);
+                    transition: all .3s;
+
+                    z-index: -1;
+                }
+
+                &:hover {
+
+                    color: $color-dark;
+
+                    &:before {
+                        transform: translateX(0) skewX(-45deg);
+                    }
+
+                }
+
+                &-1 {
+                    margin-right: 2rem;
+
+
+                }
+
+                &-2 {
+                    margin-left: 2rem;
+                }
+            }
+
+            &-icon {
+                width: 50%;
+            }
+        }
+    }
+}
